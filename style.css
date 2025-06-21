@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+:root{
+    --accent-color: #284cad;
+}
+
+*{margin: 0;
+padding: 0;}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/enderportal.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#board{
+    z-index: 1;
+    background-color: #0000009a;
+    height: 500px;
+    width: 700px;
+    border: 1px dashed #111111;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#top{
+    background-color: #ffffff00;
+    width: 700px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+#pfp{
+    margin-left: 10px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid   var(--accent-color);
+    box-shadow: 0px 0px 20px var(--accent-color);
+}
+
+.topsvgs{
+    height: 30px;
+    max-width: 30px;
+    position: relative;
+    right: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#left h1{
+    color: white;
+    font-family: 'nunito sans';
+    font-size: 1.2rem;
+}
+
+#left p{
+    color: gray;
+    font-family: 'nunito sans';
+    font-size: 0.8rem;
+    font-weight: 900;
+    opacity: 0.5;
+}
+
+#right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+
+#intrests{
+    display: flex;
+    height: 40px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.intrest{
+    font-size: 1.2rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 30px;
+    width: 21%;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: #284bad41;
+}
+.intrest:hover{
+    transform: translatey(-5%);
+    box-shadow: 0px 0px 10px var(--accent-color);
+    text-shadow: 0px 0px 10px white;
+    transition: 0.1s ease-in-out;
+
+}
+
+#skills{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sectors{
+    height: 30px;
+    margin-left: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.bars{
+    background-image: linear-gradient(32deg, var(--accent-color), #c5c5c5);
+    border-radius: 7px;
+    height: 10px;
+    margin-left: 10px;
+
+}
+
+#luaproggresbar{
+    width: 150px;
+}
+#htmlcssproggresbar{
+    width: 400px;
+    
+}
+
+#cppproggresbar{
+    width: 70px;
+
+}
+
+
+#splash{
+      inset: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(20px);
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#splashtext{
+    font-size: 2rem;
+    color: white;
+    font-family: 'courier';
+    font-style: italic;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animate-out{
+    animation: fade 0.8s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+
+  }
+  100% {
+    opacity: 0;
+
+  }
+}
+#languages{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.lang{
+    font-size: 1.2rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 30px;
+    width: 21%;
+    height: 45%;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: #284bad36;
+}
+
+.lang:hover{
+    transform: translatey(-5%);
+    box-shadow: 0px 0px 10px var(--accent-color);
+    text-shadow: 0px 0px 10px white;
+    transition: 0.1s ease-in-out;
+
+}
+
+
+#github{
+       filter: brightness(0) saturate(100%) invert(17%) sepia(90%) saturate(487%) hue-rotate(191deg) brightness(200%) contrast(95%);
+}
+
+#gif{
+    position: relative;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 300px;
+
+}
