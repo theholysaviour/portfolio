@@ -14,7 +14,7 @@ html{
 body{
     height: 100%;
     width: 100%;
-    background-image: url(/img/enderportal.jpg);
+    background-image: url(/img/background.gif);
     display: flex;
     align-items: center;
     justify-content: center;
