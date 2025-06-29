@@ -17,6 +17,7 @@ body{
     background-image: url(/img/background.gif);
     background-repeat: no-reapeat;
     background-size: cover;
+    backdrop-filter: brightness(50%);
     display: flex;
     align-items: center;
     justify-content: center;
